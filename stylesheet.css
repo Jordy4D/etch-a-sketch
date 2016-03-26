@@ -10,16 +10,13 @@
 
 .grid {
 	width: 800px;
-	height: 50px;
 	display: block;
 	
 }
 
 .row {
-	width: 50px;
-	height: 50px;
 	display: inline-block;
-	position: relative;
+
 }
 
 #leftknob {
@@ -53,7 +50,16 @@
 	background-color: black;
 }
 
-#resetbutton {
+#button-group {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#reset-grid {
+	margin: 10px auto;
+}
+
+#reset-squares {
 	margin: 10px auto;
 }
 
@@ -61,16 +67,17 @@ button {
 	background: blue;
 	color: white;
 	font-family: sans-serif;
-	width: 80px;
-	height: 30px;
+	width: 100px;
+	height: 50px;
 	border: 5px auto;
-	display: block;
+	margin: 10px auto;
 
 }
 
 button p {
 	text-align: center;
 	margin: auto auto;
+	text-decoration: none;
 }
 
 
