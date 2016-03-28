@@ -3,6 +3,7 @@ $(document).ready(function(){
 		var gridSize;
 		var gridAmount;
 
+		//asks user to decide how fine the drawing's lines will be
 		gridAmount = window.prompt("From 1 to 64, what is your grid's square parameters (00 x 00)?");
 
 		if (gridAmount === "", null, undefined, false){
@@ -13,6 +14,8 @@ $(document).ready(function(){
 			gridSize = gridAmount;
 		};
 
+
+		//Below is the function to generate the size and amount of squares, given gridSize
 		function grid() {
 
 			for (x = 0; x < gridSize; x++) {
@@ -28,12 +31,14 @@ $(document).ready(function(){
 
 		grid(gridSize);
 
-		
+		//the function used to draw the line based on the mouse movements
 
 		$('.row').hover(function() {
 	    	$(this).addClass( "drawing" );
 	  	});
 		
+		//two requested buttons' functionality
+
 		$('#reset-grid').click(function(){
 			$('.drawing').removeClass("drawing")
 		});
