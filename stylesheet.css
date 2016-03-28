@@ -6,6 +6,9 @@
 	border-radius: 5%;
 	border-style: thick;
 	border: 70px solid #FF0000;
+	position: relative;
+	z-index: 0;
+
 }
 
 .grid {
@@ -29,7 +32,7 @@
 	float: left;
 	margin-left: 100px;
 	margin-top: -100px;
-	
+	z-index: 1000;
 }
 
 #rightknob {
@@ -42,6 +45,7 @@
 	float: right;
 	margin-right: 100px;
 	margin-top: -100px;
+	z-index: 1000;
 }
 
 .drawing {
